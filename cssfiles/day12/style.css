@@ -1,0 +1,153 @@
+/* .btn{
+    height: 35px;
+    width: 90px;
+    background-color: blue;
+    color: white;
+    border: 1px solid green;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+} */
+
+
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 200px;
+    animation: r 2s infinite linear;
+
+}
+
+@keyframes r {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+
+/* .box {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 200px;
+    animation: r 2s 3 linear;
+}
+
+@keyframes r {
+    from{
+        transform: rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+} */
+/* 
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+    margin: 200px;
+    transition: transform 2s;
+}
+
+.box:hover{
+    transform: rotate(90deg);
+}
+ */
+
+
+ .box{
+    height: 600px;
+    width: 1000px;
+    border: 2px solid green;
+    /* background: linear-gradient(to right,red,green,blue,orange,gray);
+    background: linear-gradient(to left,red,green,blue,orange,gray);
+    background: linear-gradient(to top,red,green,blue,orange,gray);
+    background: linear-gradient(to bottom,red,green,blue,orange,gray); */
+
+    /* background: radial-gradient(circle,red,green,blue,orange,gray); */
+    /* background: radial-gradient(ellipse,red 20%,green 30%,blue 80%,orange 10%,gray); */
+
+   /* background: conic-gradient(red,green,blue,orange,gray);
+   background: conic-gradient(at left top,red,green,blue,orange,gray);
+   background: conic-gradient(from 180deg,red,green,blue,orange,gray); */
+
+ }
+
+ /* .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+ 
+ }
+ .logo{
+    display: flex;
+ }
+ .logo img{
+    height: 60px;
+    width: 60px;
+ }
+ .nav-links a{
+    text-decoration: none;
+    color: red;
+ }
+
+ .profile{
+    display: flex;
+    margin-right: 30px;
+ }
+
+ @media (max-width: 800px) {
+
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    position: fixed;
+    width: 100%; 
+ }
+ .nav-links a{
+    display: none;
+ }
+}
+
+
+@media (max-width: 400px) {
+
+    .navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: blue;
+    position: fixed;
+    width: 100%; 
+ }
+ .nav-links a{
+    display: none;
+ }
+} */
+
+img{
+    height: 800px;
+    width: 700px;
+}
+
+@media (max-width: 400px) {
+    img{
+    height: 100px;
+    width: 100px;
+}
+}
+

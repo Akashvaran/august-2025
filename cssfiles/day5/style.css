@@ -1,0 +1,54 @@
+/* .container{
+    height: 400px;
+    width: 600px;
+    margin: 100px 100px;
+    position: relative;
+    border: 2px solid red;
+
+}
+
+.child1{
+    height: 150px;
+    width: 150px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    
+}
+.child2{
+    height: 150px;
+    width: 150px;
+    background-color: green;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    z-index: 1;
+}
+.child3{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    position: absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 2;
+} */
+
+.container{
+    display: flex;
+    /* flex-direction: row;
+    flex-direction: column-reverse;
+    flex-direction: row-reverse;
+    flex-direction: column; */
+    /* justify-content: center;
+    justify-content: start;
+    justify-content: end;
+    justify-content: space-between;
+    justify-content: space-around;
+    justify-content: space-evenly; */
+
+   
+}
+

@@ -1,0 +1,29 @@
+*{
+    /* background-color: black;
+    color: aliceblue; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+p{
+    /* color: white; */
+    /* background-color: red; */
+    /* font-size: 20px; */
+    font-weight: 900;
+    letter-spacing: 5px;
+    word-spacing: 8px;
+    text-align: center;
+    text-align: end;
+    text-align: start;
+    text-align: justify;
+    }
+.heading{
+background-color: orange;
+}
+
+#box{
+    color: green;
+    background-color: yellow;
+}
+
