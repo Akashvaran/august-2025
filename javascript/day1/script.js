@@ -3,6 +3,7 @@
 // var arr=["akash",20];
 // var num=20.3;
 
+
 // console.log(name)
 // console.log(number,num)
 
@@ -53,7 +54,11 @@
 // value()
 // console.log(Uname)
 
-console.log(age);
+// console.log(age);
+{
+    let a=20;
+}
 
 
+let 
 
