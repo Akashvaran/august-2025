@@ -39,11 +39,25 @@
 //    document.body.appendChild(a)
 // })
 
-let button=document.getElementById('btn')
 
-button.addEventListener('click',()=>{
-    let data=document.getElementById('inputs').value
 
-    console.log(data)
+
+
+// let button=document.getElementById('btn')
+
+// button.addEventListener('click',()=>{
+//     let data=document.getElementById('inputs').value
+
+//     console.log(data)
  
+// })
+
+
+
+
+document.getElementById('btn').addEventListener('keypress',(event)=>{
+    let a=document.getElementById('msg')
+    console.log(event)
+    a.textContent+=event.key
 })
+
