@@ -1,72 +1,53 @@
+// import { Useeffect } from "./day2/Useeffect"
 
-
-// function App() {
-//   // let count = 0;
-
-import { useState } from "react"
-
-
-
-//   function increment() {
-//     // count++;
-//     // console.log("Increment function called")
-//     // console.log(count);
-//     let data=document.getElementById('count');
-// data.innerText++
-
-//   }
-//   function decrement() {
-    
-//     // console.log("decrement function called")
-//     // console.log(count);
-//     let data=document.getElementById('count');
-// data.innerText--
-//   }
-
-//   return (
-//     <>
-//       <h1 id="count">0</h1>
-//       <button onClick={increment}>increment</button>
-//       <button onClick={decrement}>decrement</button>
-//     </>
-//   )
-// }
-
-// export default App
-
-
-
-
-// function App() {
-//  const[count,setCount]=useState(0)
-
-//   function increment() {
-//     setCount(count+1)
-//   }
-//   function decrement() {
-//      setCount(count-1)
-//   }
-
-//   return (
-//     <>
-//       <h1>{count}</h1>
-//       <button onClick={increment}>increment</button>
-//       <button onClick={decrement}>decrement</button>
-//     </>
-//   )
-// }
-
-// export default App
+import { Outlet, Route, Routes } from "react-router-dom"
+import Navbar from "./day3/navbar/Navbar"
+import { Home } from "./day3/pages/Home"
+import { About } from "./day3/pages/About"
+import { Services } from "./day3/pages/Services"
+import { Contact } from "./day3/pages/Contact"
+import { ErrorPage } from "./day3/pages/ErrorPage"
+import { Layout } from "./day3/navbar/Layout"
 
 
 function App() {
- const[count,setCount]=useState(0);
+  // console.log("hello");
+  // const name ="akash varan"
+  // const email ="akasvaran@123"
+  // const password ="akash@123"
+  // const mobile =1234567890
+
 
   return (
     <>
-      <h1>{count}</h1>
-      <button onClick={()=>setCount(count+1)}>increment</button>
-      <button onClick={()=>setCount(count-1)}>decrement</button>
+      {/* <Useeffect name={name} email={email} password={password} mobile={mobile}/> */}
+
+
+
+      {/* <Navbar /> */}
+
+
+      <Routes>
+
+        <Route path="/" element={<Layout/>}>
+          <Route index element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/service" element={<Services />} />
+        
+        </Route>
+          <Route path="/contact" element={<Contact />} />
+
+        <Route path="*" element={<ErrorPage />} />
+
+      </Routes>
+
+
+
+
+
+
+
+
     </>
   )
 }
