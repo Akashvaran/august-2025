@@ -1,5 +1,6 @@
 import axios from 'axios'
 import React, { useState,useEffect } from 'react'
+import Axios from '../../axios/Axios';
 // import {useNavigate} from 'react-router-dom'
 
 export const Home = () => {
@@ -12,7 +13,11 @@ export const Home = () => {
   // }, 10000);
 
 const getdata= async()=>{
-   const responce=await axios.get('https://fakestoreapi.com/products');
+//    const responce=await axios.get('https://fakestoreapi.com/products');
+//     console.log(responce);
+//     setData(responce.data)
+// }
+   const responce=await Axios.get('/products');
     console.log(responce);
     setData(responce.data)
 }
