@@ -13,6 +13,9 @@ import { AdminLayout } from "./AdminLayout/AdminLayout"
 import { AdminHome } from "./admindashboard/AdminHome"
 import { AdminAbout } from "./admindashboard/AdminAbout"
 import { Admindata } from "./admindashboard/Admindata"
+import { Fileupload } from "./day9/Fileupload"
+import { ModelWindow } from "./day9/ModelWindow"
+import { ModelScreen } from "./day9/ModelScreen"
 
 
 function App() {
@@ -31,12 +34,12 @@ function App() {
 
       <Routes>
               {/* user */}
-        <Route path="/" element={<Layout/>}>
+        {/* <Route path="/" element={<Layout/>}>
           <Route index element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/service" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
-        </Route>
+        </Route> */}
 
         {/* <Route path="/admin/" element={<AdminLayout/>}>
           <Route index element={<AdminHome/>} />
@@ -45,7 +48,9 @@ function App() {
         </Route> */}
 
 
-
+          {/* <Route path="/" element={<Fileupload/>}/> */}
+          {/* <Route path="/" element={<ModelWindow/>}/> */}
+          <Route path="/" element={<ModelScreen/>}/>
         
 
         <Route path="*" element={<ErrorPage />} />
