@@ -6,10 +6,11 @@ import { useContext } from 'react'
 
 
 export const ProtectedRoute = ({children}) => {
-     
-    const {email,password} =useContext(UserContext)
 
-    if(!(email=="akas@gmail.com"&&password=="akash@123")){
+     
+    const {isLogin} =useContext(UserContext)
+
+    if(!isLogin){
         return <Navigate to={'/'}/>
     }
 
