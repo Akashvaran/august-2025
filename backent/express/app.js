@@ -54,8 +54,6 @@ app.put("/update/:id",async(req,res)=>{
     })
 })
 
-
-
 app.delete("/delete/:id",async(req,res)=>{
     console.log(req.params)
     const{id}=req.params;
@@ -88,13 +86,10 @@ app.get('/get',async(req,res)=>{
 
 })
 
-
-
 app.listen(8000, () => {
     console.log("server is running");
 
 })
-
 
 
 
